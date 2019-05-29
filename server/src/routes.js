@@ -8,4 +8,8 @@ module.exports = app => {
     AuthenticationControllerPolicy.register,
     AuthController.register
   );
+  app.post(
+    '/login',
+    AuthController.login
+  );
 };
